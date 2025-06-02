@@ -1,0 +1,13 @@
+services:
+  jenkins.test.jenkins.local:
+    image: jenkins/jenkins:lts
+    container_name: jenkins.test.jenkins.local
+    hostname: jenkins.test.jenkins.local
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - JENKINS_USER=ngomismailadonde
+      - JENKINS_PASS=PassW0rd1234

@@ -1,0 +1,19 @@
+server:
+    port: 9090
+
+spring:
+  application:
+    name: ismaila-dev-jenkins
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/EtudiantsDB
+    username: ismaila
+    password: PassW0rd1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+...

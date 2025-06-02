@@ -1,0 +1,25 @@
+services:
+  jenkins.test.db.postgres.local:
+    image: 'postgres:latest'
+    container_name: jenkins.test.db.postgres.local
+    environment:
+      - 'POSTGRES_DB=EtudiantsDB'
+      - 'POSTGRES_PASSWORD=PassW0rd1234'
+      - 'POSTGRES_USER=ismaila'
+    ports:
+      - '5432:5432'
+
+  jenkins.test.db.pg.admin.local:
+    image: dpage/pgadmin4:latest
+    container_name: jenkins.test.db.pg.admin.local
+    restart: unless-stopped
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ngomismailadonde@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=PassW0rd1234
+      - PGADMIN_LISTEN_PORT=80
+      - PGADMIN_CONFIG_SERVER_MODE=True
+      - PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True
+      - LOGIN_BANNER=WELCOME - TRANSPORTS
+      - PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10

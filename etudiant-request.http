@@ -1,0 +1,8 @@
+POST http://localhost:9090/api/etudiants
+Content-Type: application/json
+
+{
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "email": " "
+}

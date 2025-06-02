@@ -1,4 +1,4 @@
-package com.ngomdev.niit.sn.test_jenkins;
+package com.ngom.dev.niit.sn.jenkins;
 
 import org.springframework.boot.SpringApplication;
 
