@@ -19,6 +19,7 @@ pipeline {
                 sh 'mvn clean compile'
             }
         }
+        //CONFIGURATION DE JENKINFILL
 
         stage('Test') {
             steps {
