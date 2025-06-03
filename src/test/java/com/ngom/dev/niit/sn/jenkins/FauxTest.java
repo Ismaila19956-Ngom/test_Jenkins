@@ -7,6 +7,6 @@ class FauxTest {
     @Test
     void testAdditionFaillie() {
         int resultat = 5 + 5;
-        assertEquals(30, resultat); // volontairement faux
+        assertEquals(10, resultat); // volontairement faux
     }
 }
