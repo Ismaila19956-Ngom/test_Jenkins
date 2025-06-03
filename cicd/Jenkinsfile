@@ -19,7 +19,6 @@ pipeline {
                 sh 'mvn clean compile'
             }
         }
-        //CONFIGURATION DE JENKINFILL
 
         stage('Test') {
             steps {
@@ -38,12 +37,11 @@ pipeline {
                 sh 'mvn package'
             }
         }
-
-
     }
 
     post {
         always {
             cleanWs()
- }
+        }
+    }
 }
