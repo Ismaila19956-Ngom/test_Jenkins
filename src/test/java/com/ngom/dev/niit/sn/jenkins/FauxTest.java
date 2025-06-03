@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FauxTest {
-
+    //test
     @Test
     void testAdditionFaillie() {
         int resultat = 5 + 5;
-        assertEquals(30, resultat); // volontairement faux
+        assertEquals(10, resultat);
     }
 }

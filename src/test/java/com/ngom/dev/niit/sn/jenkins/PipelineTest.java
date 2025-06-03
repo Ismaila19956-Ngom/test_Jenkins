@@ -8,4 +8,5 @@ public class PipelineTest {
         String message = "Pipeline is running!";
         assertEquals("Pipeline is running!", message);
     }
+    //add comment
 }
